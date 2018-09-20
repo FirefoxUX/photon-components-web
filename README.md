@@ -3,7 +3,7 @@ Photon versions of the some common web UI components
 
 ## Conventions
 
-Components are styled using the BEM (Block-Element-Modifier) convention:
+Components are styled using the [BEM](http://getbem.com/) (Block-Element-Modifier) convention:
 
 * Top-level components are "blocks"
   * e.g. `button`

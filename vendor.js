@@ -17,7 +17,7 @@ function vendor() {
 
 const VENDOR_FILES = {
   'photon-icons': [
-    'icons/desktop/refresh-16.svg'
+    'icons/desktop/sync-16.svg'
   ],
   'photon-colors': [
     'photon-colors.css'
