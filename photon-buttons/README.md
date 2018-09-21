@@ -5,22 +5,22 @@
 ### Default
 
 ```html
-  &lt;a href="#" class="button">Anchor&lt;/a>
-  &lt;button>Button&lt;/button>
+  <a href="#" class="button">Anchor</a>
+  <button>Button</button>
 ```
 
 ### Primary
 
 ```html
-  &lt;a href="#" class="button button--primary">Anchor&lt;/a>
-  &lt;button class="button--primary">Button&lt;/button>
+  <a href="#" class="button button--primary">Anchor</a>
+  <button class="button--primary">Button</button>
 ```
 
 ### Ghost
 
 ```html
-  &lt;a href="#" class="button button--ghost" aria-label="refresh" style="background-image: url(../vendor/sync-16.svg)">&lt;/a>
-  &lt;button class="button button--ghost" aria-label="refresh" style="background-image: url(../vendor/sync-16.svg)">&lt;/button>
+  <a href="#" class="button button--ghost" aria-label="refresh" style="background-image: url(../vendor/sync-16.svg)"></a>
+  <button class="button button--ghost" aria-label="refresh" style="background-image: url(../vendor/sync-16.svg)"></button>
 ```
 
 ## Sizes
@@ -28,21 +28,21 @@
 ### Micro
 
 ```html
-  &lt;a href="#" class="button button--micro">Anchor&lt;/a>
-  &lt;button class="button--micro">Button&lt;/button>
+  <a href="#" class="button button--micro">Anchor</a>
+  <button class="button--micro">Button</button>
 
-  &lt;a href="#" class="button button--primary button--micro">Anchor&lt;/a>
-  &lt;button class="button--primary button--micro">Button&lt;/button>
+  <a href="#" class="button button--primary button--micro">Anchor</a>
+  <button class="button--primary button--micro">Button</button>
 ```
 
 ### Puffy
 
 ```html
-  &lt;a href="#" class="button button--puffy">Anchor&lt;/a>
-  &lt;button class="button--puffy">Button&lt;/button>
+  <a href="#" class="button button--puffy">Anchor</a>
+  <button class="button--puffy">Button</button>
 
-  &lt;a href="#" class="button button--primary button--puffy">Anchor&lt;/a>
-  &lt;button class="button--primary button--puffy">Button&lt;/button>
+  <a href="#" class="button button--primary button--puffy">Anchor</a>
+  <button class="button--primary button--puffy">Button</button>
 ```
 
 ## States
@@ -50,12 +50,12 @@
 ### Disabled
 
 ```html
-  &lt;a href="#" class="button" aria-disabled>Anchor&lt;/a>
-  &lt;button disabled>Button&lt;/button>
+  <a href="#" class="button" aria-disabled>Anchor</a>
+  <button disabled>Button</button>
 
-  &lt;a href="#" class="button button--primary" aria-disabled>Anchor&lt;/a>
-  &lt;button class="button--primary" disabled>Button&lt;/button>
+  <a href="#" class="button button--primary" aria-disabled>Anchor</a>
+  <button class="button--primary" disabled>Button</button>
 
-  &lt;a href="#" class="button button--ghost" aria-label="refresh" aria-disabled style="background-image: url(../vendor/sync-16.svg)">&lt;/a>
-  &lt;button class="button button--ghost" aria-label="refresh" disabled style="background-image: url(../vendor/sync-16.svg)">&lt;/button>
+  <a href="#" class="button button--ghost" aria-label="refresh" aria-disabled style="background-image: url(../vendor/sync-16.svg)"></a>
+  <button class="button button--ghost" aria-label="refresh" disabled style="background-image: url(../vendor/sync-16.svg)"></button>
 ```
