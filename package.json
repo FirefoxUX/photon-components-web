@@ -1,0 +1,29 @@
+{
+  "name": "photon-components-web",
+  "version": "1.0.0",
+  "description": "Photon versions of the some common WebComponents",
+  "main": "index.js",
+  "scripts": {
+    "build": "node vendor.js",
+    "start": "onchange '**/*.css' -e 'vendor/**' -v -- npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potch/photon-components-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potch/photon-components-web/issues"
+  },
+  "homepage": "https://github.com/potch/photon-components-web#readme",
+  "dependencies": {
+    "highlightjs": "^9.10.0",
+    "photon-colors": "^3.3.1",
+    "photon-icons": "^4.0.0"
+  },
+  "devDependencies": {
+    "onchange": "^4.1.0"
+  }
+}
