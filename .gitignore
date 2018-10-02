@@ -1,1 +1,7 @@
 node_modules
+storybook
+npm-debug.log
+*.DS_Store
+*.log
+*.sw?
+*~
