@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/potch/photon-components-web.git"
+    "url": "git+https://github.com/FirefoxUX/photon-components-web.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/potch/photon-components-web/issues"
+    "url": "https://github.com/FirefoxUX/photon-components-web/issues"
   },
-  "homepage": "https://github.com/potch/photon-components-web#readme",
+  "homepage": "https://github.com/FirefoxUX/photon-components-web#readme",
   "dependencies": {
     "highlightjs": "^9.10.0",
     "photon-colors": "^3.3.1",
