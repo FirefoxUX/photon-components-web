@@ -20,7 +20,6 @@ a.button {
   width: auto;
 }
 
-
 /* Primary style */
 
 button.button--primary,
@@ -40,7 +39,6 @@ a.button.button--primary:active {
   background-color: var(--blue-80);
 }
 
-
 /* Ghost style */
 
 button.button--ghost,
@@ -56,7 +54,6 @@ a.button.button--ghost {
   width: 32px;
 }
 
-
 /* Micro size */
 
 button.button--micro,
@@ -68,7 +65,6 @@ a.button.button--micro {
   min-width: auto;
 }
 
-
 /* Puffy size */
 
 button.button--puffy,
@@ -79,7 +75,6 @@ a.button.button--puffy {
   min-width: auto;
   padding: 0 16px;
 }
-
 
 /* Hover, Active states */
 
@@ -106,6 +101,7 @@ a.button.button--ghost:active {
 button::-moz-focusring {
   outline: none;
 }
+
 button::-moz-focus-inner {
   border: 0;
 }

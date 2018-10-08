@@ -4,12 +4,17 @@
 
 body {
   background-color: var(--grey-10);
-  font-family: -apple-system, BlinkMacSystemFont,
-               'helvetica neue', helvetica,
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'helvetica neue',
+    helvetica,
+    ubuntu,
+    roboto,
+    noto,
+    'segoe ui',
+    arial,
+    sans-serif;
   padding: 1em;
   margin: 0 auto;
   max-width: 800px;
