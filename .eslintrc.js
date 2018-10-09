@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     "import/no-named-as-default": "off",
     "import/prefer-default-export": "off",
+    "no-trailing-spaces": "off",
   },
   overrides: [
     {

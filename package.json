@@ -10,6 +10,7 @@
     "storybook": "start-storybook --ci -p 9001 -c .storybook",
     "format": "npm-run-all format:*",
     "format:js": "prettier --write \"**/*.js\"",
+    "test": "npm-run-all lint",
     "lint": "npm-run-all lint:*",
     "lint:css": "stylelint './**/*.css'",
     "lint:js": "eslint --color .",
