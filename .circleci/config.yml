@@ -1,5 +1,6 @@
 version: 2
 jobs:
+
   build:
     docker:
       - image: circleci/node:8.11.4
@@ -20,3 +21,28 @@ jobs:
       - run: zip -r storybook.zip storybook
       - store_artifacts:
           path: ~/repo/storybook.zip
+      - persist_to_workspace:
+          root: .
+          paths:
+            - ./*
+
+  storybook_deploy:
+    docker:
+      - image: circleci/node:8.11.4
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: .
+      - run: npm run deploy:storybook
+      
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - build
+      - storybook_deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
