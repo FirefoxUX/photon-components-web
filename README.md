@@ -1,4 +1,7 @@
 # photon-components-web
+
+[![CircleCI](https://circleci.com/gh/FirefoxUX/photon-components-web.svg?style=svg)](https://circleci.com/gh/FirefoxUX/photon-components-web)
+
 Photon versions of the some common web UI components
 
 ## Conventions
