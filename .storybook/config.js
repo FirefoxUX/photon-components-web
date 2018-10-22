@@ -2,6 +2,7 @@ import { configure } from "@storybook/react";
 
 import "photon-colors/photon-colors.css";
 import "../base.css";
+import "../attributes/index.css";
 
 // TODO: Get code samples and highlighting working in a storybook addon
 // import "../demo/demo";
