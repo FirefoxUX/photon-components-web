@@ -1,0 +1,12 @@
+.card {
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.card--size-large {
+  padding: 20px;
+}
+
+.card:hover {
+  border: 5px solid #d7d7db;
+}
