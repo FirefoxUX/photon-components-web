@@ -18,9 +18,13 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm test
       - run: npm run build:storybook
+      - run: npm run build:webpack
       - run: zip -r storybook.zip storybook
       - store_artifacts:
           path: ~/repo/storybook.zip
+      - run: zip -r dist.zip dist
+      - store_artifacts:
+          path: ~/repo/dist.zip
       - persist_to_workspace:
           root: .
           paths:
