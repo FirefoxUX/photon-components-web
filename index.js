@@ -1,2 +1,8 @@
+import "photon-colors/photon-colors.css";
+
+import "./base.css";
+
 import "./attributes";
-import "./components";
+
+// Import all components/*/index.js
+require.context("./components", true, /\/index.js$/);
