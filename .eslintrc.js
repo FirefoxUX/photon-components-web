@@ -14,6 +14,8 @@ module.exports = {
     "import/no-named-as-default": "off",
     "import/prefer-default-export": "off",
     "no-trailing-spaces": "off",
+    "eol-last": "off",
+    "react/prop-types": "off",
   },
   overrides: [
     {
