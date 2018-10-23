@@ -1,26 +1,10 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-
-import { action } from "@storybook/addon-actions";
-
-import { ExtractSource } from "../../.storybook/code-sample";
+import { Sample } from "../../lib/stories-common";
 
 import Card from "./index";
 
 import "./index.css";
-
-const actionDefault = msg => ev => {
-  ev.preventDefault();
-  action(msg)(ev);
-};
-
-const Sample = ({ children, ...props }) => (
-  <ExtractSource {...props}>
-    <div className="sample" onClick={actionDefault("clicked")}>
-      {children}
-    </div>
-  </ExtractSource>
-);
 
 storiesOf("Card", module)
   .add("Default", () => (

@@ -1,28 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-
-import { action } from "@storybook/addon-actions";
-
-import { ExtractSource } from "../../.storybook/code-sample";
-
-// TODO: Actually build & use a React component for the markup
-// import Button from "./index";
+import { Sample } from "../../lib/stories-common";
 
 import "./index.css";
-import imageSync from "../../vendor/sync-16.svg";
-
-const actionDefault = msg => ev => {
-  ev.preventDefault();
-  action(msg)(ev);
-};
-
-const Sample = ({ children, ...props }) => (
-  <ExtractSource {...props}>
-    <div className="sample" onClick={actionDefault("clicked")}>
-      {children}
-    </div>
-  </ExtractSource>
-);
+import imageSync from "./sync-16.svg";
 
 storiesOf("Button", module)
   .add("Default", () => (
