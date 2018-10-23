@@ -4,6 +4,18 @@
 
 Photon versions of the some common web UI components
 
+## Development
+
+To get started:
+
+```sh
+npm install
+# To generate static CSS and images/ in dist/ :
+npm run build:webpack
+# To run the demonstration site locally on http://localhost:9001/ :
+npm start
+```
+
 ## Conventions
 
 Components are styled using the [BEM](http://getbem.com/) (Block-Element-Modifier) convention:
