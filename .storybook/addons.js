@@ -1,3 +1,2 @@
-import "@storybook/addon-actions/register";
-
 import "./code-sample/register";
+import "@storybook/addon-actions/register";
