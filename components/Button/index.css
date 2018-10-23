@@ -15,7 +15,7 @@ a.button {
   min-width: 132px;
   padding: 0 8px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   vertical-align: middle;
   width: auto;
 }

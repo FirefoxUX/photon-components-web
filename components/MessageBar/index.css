@@ -1,0 +1,131 @@
+.messageBar {
+  border-radius: 4px;
+  display: flex;
+  min-height: 32px;
+}
+
+.messageBar .icon {
+  height: 16px;
+  margin: 8px 4px;
+  width: 16px;
+}
+
+.messageBar .message {
+  margin: 6px 8px 6px 4px;
+}
+
+.messageBar .button {
+  margin: 4px 0;
+}
+
+.messageBar .close {
+  background-image: url(./close-16.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  height: 16px;
+  margin: 4px;
+  margin-left: auto;
+  width: 16px;
+}
+
+.messageBar--generic {
+  background: var(--grey-20);
+  color: var(--grey-90);
+}
+
+.messageBar--generic .button {
+  background: var(--grey-90-a10);
+}
+
+.messageBar--generic .icon {
+  background-image: url(./info-16.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+.messageBar--generic .button:hover {
+  background: var(--grey-90-a20);
+  color: white;
+}
+
+.messageBar--generic .button:active {
+  background: var(--grey-90-a30);
+  color: white;
+}
+
+.messageBar--success {
+  background: var(--green-50);
+}
+
+.messageBar--success .icon {
+  background-image: url(./check-16.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+.messageBar--success .button {
+  background: var(--green-60);
+}
+
+.messageBar--success .button:hover {
+  background: var(--green-70);
+  color: white;
+}
+
+.messageBar--success .button:active {
+  background: var(--green-80);
+  color: white;
+}
+
+.messageBar--warning {
+  background: var(--yellow-50);
+  color: var(--yellow-90);
+}
+
+.messageBar--warning .icon {
+  background-image: url(./warning-16.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+.messageBar--warning .button {
+  background: var(--yellow-60);
+}
+
+.messageBar--warning .button:hover {
+  background: var(--yellow-70);
+  color: white;
+}
+
+.messageBar--warning .button:active {
+  background: var(--yellow-80);
+  color: white;
+}
+
+.messageBar--error {
+  background: var(--red-60);
+  color: white;
+}
+
+.messageBar--error .icon {
+  background-image: url(./error-16.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+.messageBar--error .button {
+  background: var(--red-70);
+  color: white;
+}
+
+.messageBar--error .button:hover {
+  background: var(--red-80);
+}
+
+.messageBar--error .button:active {
+  background: var(--red-90);
+}
+
+.messageBar--error .close {
+  background-image: url(./close-white-16.svg);
+}
