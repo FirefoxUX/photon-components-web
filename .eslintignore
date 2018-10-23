@@ -1,4 +1,4 @@
 node_modules
 storybook
 vendor
-build
+dist
