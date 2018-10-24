@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development npm-run-all --parallel watch storybook",
-    "build": "node vendor.js",
+    "build": "npm-run-all --parallel build:*",
     "build:storybook": "build-storybook -o storybook -c .storybook",
     "build:webpack": "cross-env NODE_ENV=production webpack -p",
     "storybook": "start-storybook --ci -p 9001 -c .storybook",
-    "deploy:storybook": "gh-pages --silent --add --dist storybook --user 'Storybook Deploy <lorchard@mozilla.com>' --repo https://$GH_TOKEN@github.com/FirefoxUX/photon-components-web.git",
     "format": "npm-run-all format:*",
     "format:js": "prettier --write \"**/*.js\"",
     "test": "npm-run-all lint",
@@ -69,6 +68,7 @@
     "prettier": "^1.14.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-markdown": "^4.0.3",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
     "webpack": "^4.21.0"
