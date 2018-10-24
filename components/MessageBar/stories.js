@@ -105,19 +105,19 @@ storiesOf("MessageBar", module)
         message="This is my message" callToAction={(<a href="#" className="button button--micro">call to action</a>)}/>
       <MessageBar type={"success"} onDismiss={() => {}}
         message="This is my successful message" />
-      <MessageBar type={"success"} dismissable={false}
+      <MessageBar type={"success"}
         message="This is my successful message" callToAction={(<a href="#" className="button button--micro">call to action</a>)}/>
       <MessageBar type={"success"} onDismiss={() => {}}
         message="This is my successful message" callToAction={(<a href="#" className="button button--micro">call to action</a>)}/>
       <MessageBar type={"warning"} onDismiss={() => {}}
         message="This is my warning message" />
-      <MessageBar type={"warning"} dismissable={false}
+      <MessageBar type={"warning"} 
         message="This is my warning message" callToAction={(<a href="#" className="button button--micro">call to action</a>)}/>
       <MessageBar type={"warning"} onDismiss={() => {}}
         message="This is my warning message" callToAction={(<a href="#" className="button button--micro">call to action</a>)}/>
       <MessageBar type={"error"} onDismiss={() => {}}
         message="This is my error message" />
-      <MessageBar type={"error"} dismissable={false}
+      <MessageBar type={"error"}
         message="This is my error message" callToAction={(<a href="#" className="button button--micro">call to action</a>)}/>
       <MessageBar type={"error"} onDismiss={() => {}}
         message="This is my error message" callToAction={(<a href="#" className="button button--micro">call to action</a>)}/>
