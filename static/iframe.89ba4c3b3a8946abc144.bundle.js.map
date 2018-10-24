@@ -1,0 +1,1 @@
+{"version":3,"file":"static/iframe.89ba4c3b3a8946abc144.bundle.js","sources":["webpack:///./components/Link/index.js"],"sourcesContent":["import React from \"react\";\n\nimport \"./index.css\";\n\nexport const Link = ({ href, children }) => (\n  <a href={href}>{children}</a>\n);\n\nexport default Link;\n"],"mappings":"AAAA","sourceRoot":""}
