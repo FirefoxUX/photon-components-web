@@ -16,6 +16,7 @@ module.exports = {
     "no-trailing-spaces": "off",
     "eol-last": "off",
     "react/prop-types": "off",
+    "mozilla/no-define-cc-etc": "off",
   },
   overrides: [
     {
