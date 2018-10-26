@@ -2,6 +2,8 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Sample } from "../../lib/stories-common";
 
+import Button from "./index";
+
 import "./index.css";
 import imageSync from "./sync-16.svg";
 
@@ -11,7 +13,7 @@ storiesOf("Button", module)
       <a href="#" className="button">
         Anchor
       </a>
-      <button>Button</button>
+      <Button>Button</Button>
     </Sample>
   ))
   .add("Primary", () => (
@@ -19,7 +21,7 @@ storiesOf("Button", module)
       <a href="#" className="button button--primary">
         Anchor
       </a>
-      <button className="button--primary">Button</button>
+      <Button type="primary">Button</Button>
     </Sample>
   ))
   .add("Ghost", () => (
@@ -30,8 +32,7 @@ storiesOf("Button", module)
         aria-label="refresh"
         style={{ backgroundImage: `url(${imageSync})` }}
       />
-      <button
-        className="button button--ghost"
+      <Button type="ghost"
         aria-label="refresh"
         style={{ backgroundImage: `url(${imageSync})` }}
       />
@@ -42,12 +43,12 @@ storiesOf("Button", module)
       <a href="#" className="button button--micro">
         Anchor
       </a>
-      <button className="button--micro">Button</button>
+      <Button size="micro">Button</Button>
 
       <a href="#" className="button button--primary button--micro">
         Anchor
       </a>
-      <button className="button--primary button--micro">Button</button>
+      <Button type="primary" size="micro">Button</Button>
     </Sample>
   ))
   .add("Puffy", () => (
@@ -55,11 +56,13 @@ storiesOf("Button", module)
       <a href="#" className="button button--puffy">
         Anchor
       </a>
+      <Button size="puffy">Button</Button>
       <button className="button--puffy">Button</button>
 
       <a href="#" className="button button--primary button--puffy">
         Anchor
       </a>
+      <Button type="primary" size="puffy">Button</Button>
       <button className="button--primary button--puffy">Button</button>
     </Sample>
   ))
@@ -68,15 +71,11 @@ storiesOf("Button", module)
       <a href="#" className="button" aria-disabled>
         Anchor
       </a>
-      <button disabled>Button</button>
-
+      <Button disabled={true}>Button</Button>
       <a href="#" className="button button--primary" aria-disabled>
         Anchor
       </a>
-      <button className="button--primary" disabled>
-        Button
-      </button>
-
+      <Button type="primary" disabled={true}>Button</Button>
       <a
         href="#"
         className="button button--ghost"
@@ -84,10 +83,10 @@ storiesOf("Button", module)
         aria-disabled
         style={{ backgroundImage: `url(${imageSync})` }}
       />
-      <button
-        className="button button--ghost"
+      <Button
+        type="ghost"
         aria-label="refresh"
-        disabled
+        disabled={true}
         style={{ backgroundImage: `url(${imageSync})` }}
       />
     </Sample>
@@ -103,7 +102,7 @@ storiesOf("Button", module)
       <a href="#" className="button button--primary">
         Anchor
       </a>
-      <button className="button--primary">Button</button>
+      <Button type="primary">Button</Button>
 
       <a
         href="#"
@@ -111,8 +110,8 @@ storiesOf("Button", module)
         aria-label="refresh"
         style={{ backgroundImage: `url(${imageSync})` }}
       />
-      <button
-        className="button button--ghost"
+      <Button
+        type="ghost"
         aria-label="refresh"
         style={{ backgroundImage: `url(${imageSync})` }}
       />
@@ -120,34 +119,34 @@ storiesOf("Button", module)
       <a href="#" className="button button--micro">
         Anchor
       </a>
-      <button className="button--micro">Button</button>
+      <Button size="micro">Button</Button>
 
       <a href="#" className="button button--primary button--micro">
         Anchor
       </a>
-      <button className="button--primary button--micro">Button</button>
+      <Button type="primary" size="micro">Button</Button>
 
       <a href="#" className="button button--puffy">
         Anchor
       </a>
-      <button className="button--puffy">Button</button>
+      <Button size="puffy">Button</Button>
 
       <a href="#" className="button button--primary button--puffy">
         Anchor
       </a>
-      <button className="button--primary button--puffy">Button</button>
+      <Button type="primary" size="puffy">Button</Button>
 
       <a href="#" className="button" aria-disabled>
         Anchor
       </a>
-      <button disabled>Button</button>
+      <Button disabled={true}>Button</Button>
 
       <a href="#" className="button button--primary" aria-disabled>
         Anchor
       </a>
-      <button className="button--primary" disabled>
+      <Button type="primary" disabled={true}>
         Button
-      </button>
+      </Button>
 
       <a
         href="#"
@@ -156,10 +155,10 @@ storiesOf("Button", module)
         aria-disabled
         style={{ backgroundImage: `url(${imageSync})` }}
       />
-      <button
-        className="button button--ghost"
+      <Button
+        type="ghost"
         aria-label="refresh"
-        disabled
+        disabled={true}
         style={{ backgroundImage: `url(${imageSync})` }}
       />
       
