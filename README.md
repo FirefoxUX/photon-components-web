@@ -8,6 +8,14 @@ These components are intended to be used anywhere where you want to make an HTML
 
 This repository is not intended for a general audience. You do not have to use React to make use of the styles.
 
+## Preview & Download
+
+Preview the latest build from master here:
+* <https://firefoxux.github.io/photon-components-web/>
+
+Download the latest build from master here:
+* <https://firefoxux.github.io/photon-components-web/dist.zip>
+
 ## Development
 
 To get started:

@@ -1,6 +1,6 @@
 import "photon-colors/photon-colors.css";
 
-import "./base.css";
+import "./index.css";
 
 import "./attributes";
 
