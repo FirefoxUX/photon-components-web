@@ -16,10 +16,9 @@
     "lint:css": "stylelint './**/*.css'",
     "lint:js": "eslint --color .",
     "watch": "npm-run-all --parallel watch:*",
-    "watch:build": "onchange '**/*.css' -e 'vendor/**' -vip -- npm run build",
     "watch:lint": "npm-run-all --parallel watch:lint:*",
-    "watch:lint:css": "onchange '**/*.css' -e 'vendor/*' -vip -- npm run lint:css",
-    "watch:lint:js": "onchange '**/*.js' -e 'node_modules/*' -vip -- npm run lint:js"
+    "watch:lint:css": "onchange '**/*.css' -e 'dist/**' -e 'storybook/**' -vi -- npm run lint:css",
+    "watch:lint:js": "onchange '**/*.js' -e 'dist/**' -e 'storybook/**' -vi -- npm run lint:js"
   },
   "repository": {
     "type": "git",
