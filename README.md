@@ -24,6 +24,8 @@ To get started:
 npm install
 # To generate static CSS and images/ in dist/ :
 npm run build:webpack
+# To generate a static Storybook in storybook/ :
+npm run build:storybook
 # To run the demonstration site locally on http://localhost:9001/ :
 npm start
 ```
