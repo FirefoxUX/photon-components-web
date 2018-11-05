@@ -16,5 +16,6 @@ zip -r deploy/dist.zip dist
 ./node_modules/.bin/gh-pages \
   --silent \
   --dist deploy \
+  --message 'Storybook deploy [skip ci]' \
   --user 'GH Deploy <lorchard@mozilla.com>' \
   --repo https://$GH_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git
