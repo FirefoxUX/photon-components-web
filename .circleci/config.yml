@@ -30,14 +30,14 @@ jobs:
           paths:
             - ./*
 
-  storybook_deploy:
+  ghpages_deploy:
     docker:
       - image: circleci/node:8.11.4
     working_directory: ~/repo
     steps:
       - attach_workspace:
           at: .
-      - run: ./bin/deploy-gh-master.sh
+      - run: ./bin/deploy-gh-pages.sh
       
 workflows:
   version: 2
@@ -47,9 +47,6 @@ workflows:
           filters:
             branches:
               ignore: gh-pages
-      - storybook_deploy:
+      - ghpages_deploy:
           requires:
             - build
-          filters:
-            branches:
-              only: master
