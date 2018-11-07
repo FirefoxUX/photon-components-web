@@ -15,7 +15,6 @@ a.button {
   min-width: 132px;
   padding: 0 8px;
   text-align: center;
-  text-decoration: none !important;
   vertical-align: middle;
   width: auto;
 }
@@ -81,6 +80,7 @@ a.button.button--puffy {
 button:hover,
 a.button:hover {
   background-color: var(--grey-90-a20);
+  text-decoration: none;
 }
 
 button:active,

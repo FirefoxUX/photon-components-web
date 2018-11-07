@@ -6,7 +6,7 @@
 
 .messageBar .icon {
   height: 16px;
-  margin: 8px 4px;
+  margin: 8px 4px 8px 8px;
   width: 16px;
 }
 
@@ -23,7 +23,7 @@
   background-repeat: no-repeat;
   background-size: 16px 16px;
   height: 16px;
-  margin: 4px;
+  margin: 8px;
   margin-left: auto;
   width: 16px;
 }
