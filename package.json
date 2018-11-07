@@ -45,6 +45,7 @@
     "@babel/preset-env": "^7.0.0-rc.3",
     "@babel/preset-react": "^7.0.0-rc.3",
     "@storybook/addon-actions": "^4.0.0-alpha.23",
+    "@storybook/addon-options": "^4.0.4",
     "@storybook/react": "^4.0.0-alpha.23",
     "ajv": "^6.5.4",
     "babel-eslint": "^8.2.6",
