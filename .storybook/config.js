@@ -12,7 +12,7 @@ function loadStories() {
 
 addDecorator(
   withOptions({
-    name: "Photon Components"
+    name: "Photon Components",
   })
 );
 

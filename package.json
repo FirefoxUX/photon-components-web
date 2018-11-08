@@ -6,9 +6,9 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development npm-run-all --parallel watch storybook",
     "build": "npm-run-all --parallel build:*",
-    "build:storybook": "build-storybook -o storybook -c .storybook",
+    "build:storybook": "build-storybook -o storybook -c .storybook -s .storybook/static",
     "build:webpack": "cross-env NODE_ENV=production webpack -p",
-    "storybook": "start-storybook --ci -p 9001 -c .storybook",
+    "storybook": "start-storybook --ci -p 9001 -c .storybook -s .storybook/static",
     "format": "npm-run-all format:*",
     "format:js": "prettier --write \"**/*.js\"",
     "test": "npm-run-all lint",
