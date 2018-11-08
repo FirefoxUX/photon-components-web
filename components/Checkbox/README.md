@@ -2,26 +2,34 @@
 
 ## Styles
 
-### With label
-
-The checkbox is contained within the label element in order to activate a
-hidden checkbox overlaid with custom styling.
-
-```html
-<label class="checkbox">
-    <input type="checkbox" class="checkbox__field" />
-    <span class="checkbox__label">Example label</span>
-</label>
-```
 ### Without label
 
-**Note:** Even without a visible text label, the checkbox component still
-requires the markup for a label. This is used as an anchor to apply the custom
-styling while keeping the checkbox accessible.
+```html
+<input type="checkbox" class="checkbox" />
+```
+
+### Without label (disabled)
 
 ```html
-<label class="checkbox">
-    <input type="checkbox" class="checkbox__field" />
-    <span class="checkbox__label"></span>
+<input type="checkbox" class="checkbox" disabled />
+```
+
+### With label
+
+```html
+<label class="checkbox__label">
+  <input type="checkbox" class="checkbox" />
+  <span class="checkbox__label__text">Example label</span>
+</label>
+```
+
+### With label (disabled)
+
+```html
+<label class="checkbox__label checkbox--disabled">
+  <input type="checkbox" class="checkbox checkbox--disabled" disabled="" checked="" />
+  <span class="checkbox__label__text checkbox--disabled__label__text">
+    Disabled checked checkbox
+  </span>
 </label>
 ```
