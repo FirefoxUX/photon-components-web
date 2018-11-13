@@ -8,7 +8,7 @@ export const MessageBar = ({ message, type, onDismiss, callToAction, ...props })
         <span className="icon" />
         <p className="message">{message}</p>
         {callToAction}
-        {onDismiss ? <a className="close" onClick={onDismiss}></a> : null}
+        {onDismiss ? <a className="button button--ghost close" onClick={onDismiss}></a> : null}
       </div>
   );
 };

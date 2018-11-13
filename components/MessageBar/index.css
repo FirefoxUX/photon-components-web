@@ -1,7 +1,9 @@
 .messageBar {
   border-radius: 4px;
   display: flex;
+  flex-wrap: wrap;
   min-height: 32px;
+  width: 100%;
 }
 
 .messageBar .icon {
@@ -18,7 +20,7 @@
   margin: 4px 0;
 }
 
-.messageBar .close {
+.messageBar .button--ghost.close {
   background-image: url(./close-16.svg);
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -44,12 +46,12 @@
 }
 
 .messageBar--generic .button:hover {
-  background: var(--grey-90-a20);
+  background-color: var(--grey-90-a20);
   color: white;
 }
 
 .messageBar--generic .button:active {
-  background: var(--grey-90-a30);
+  background-color: var(--grey-90-a30);
   color: white;
 }
 
@@ -68,12 +70,12 @@
 }
 
 .messageBar--success .button:hover {
-  background: var(--green-70);
+  background-color: var(--green-70);
   color: white;
 }
 
 .messageBar--success .button:active {
-  background: var(--green-80);
+  background-color: var(--green-80);
   color: white;
 }
 
@@ -93,12 +95,12 @@
 }
 
 .messageBar--warning .button:hover {
-  background: var(--yellow-70);
+  background-color: var(--yellow-70);
   color: white;
 }
 
 .messageBar--warning .button:active {
-  background: var(--yellow-80);
+  background-color: var(--yellow-80);
   color: white;
 }
 
@@ -119,11 +121,11 @@
 }
 
 .messageBar--error .button:hover {
-  background: var(--red-80);
+  background-color: var(--red-80);
 }
 
 .messageBar--error .button:active {
-  background: var(--red-90);
+  background-color: var(--red-90);
 }
 
 .messageBar--error .close {
