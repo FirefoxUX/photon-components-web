@@ -5,7 +5,7 @@ import { Sample } from "../../lib/stories-common";
 import Button from "./index";
 
 import "./index.css";
-import imageSync from "./sync-16.svg";
+import imageSync from "photon-icons/icons/desktop/sync-16.svg";
 
 storiesOf("Button", module)
   .add("Default", () => (
