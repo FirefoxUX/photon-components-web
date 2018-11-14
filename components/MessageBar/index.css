@@ -20,6 +20,10 @@
   margin: 4px 0;
 }
 
+.messageBar .button:focus {
+  box-shadow: none;
+}
+
 .messageBar .button--ghost.close {
   background-image: url(./close-16.svg);
   background-repeat: no-repeat;
