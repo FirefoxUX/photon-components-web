@@ -44,13 +44,22 @@ module.exports = (baseConfig, env, defaultConfig) => {
           template: INDEX_TEMPLATE,
         })
     ),
-    ...defaultConfig
-      .plugins
-      .filter(p => p.constructor.name !== "GeneratePagePlugin")
+    ...defaultConfig.plugins.filter(
+      p => p.constructor.name !== "GeneratePagePlugin"
+    ),
   ];
 
-  return Object.assign(
-    defaultConfig,
-    { plugins },
-  );
+  defaultConfig.module.rules.push({
+    test: /\.svg$/i,
+    use: [
+      {
+        loader: "./lib/svg-fill-color-loader",
+        options: {
+          defaultFill: "grey-90",
+        },
+      },
+    ],
+  });
+
+  return Object.assign(defaultConfig, { plugins });
 };
