@@ -41,3 +41,5 @@ Components are styled using the [BEM](http://getbem.com/) (Block-Element-Modifie
 * `modifiers` are optional or stateful properties applied to the markup:
   * Top-level modifiers are namespaced to their block, e.g. `button--primary`
   * Element-level modifiers namespace to their element, e.g. `card__media--loading`
+  
+In general this code should try to conform to [Firefox CSS Guidelines](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/CSS_Guidelines) and when possible the [Firefox Devtools CSS Guidelines](https://docs.firefox-dev.tools/contributing/css.html).
