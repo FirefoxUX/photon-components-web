@@ -18,6 +18,10 @@
   height: 16px;
 }
 
+.checkbox__label {
+  -moz-user-select: none;
+}
+
 .checkbox__label::after {
   position: absolute;
   cursor: pointer;
