@@ -70,7 +70,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|gif|png|svg)$/i,
+        test: /\.(jpe?g|gif|png)$/i,
         use: [
           {
             loader: "file-loader",
@@ -84,6 +84,31 @@ module.exports = {
             loader: "image-webpack-loader",
             options: {
               bypassOnDebug: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.svg$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              hash: "sha512",
+              digest: "hex",
+              name: "images/[name]-[hash].[ext]",
+            },
+          },
+          {
+            loader: "image-webpack-loader",
+            options: {
+              bypassOnDebug: true,
+            },
+          },
+          {
+            loader: "./lib/svg-fill-color-loader",
+            options: {
+              defaultFill: "grey-90",
             },
           },
         ],

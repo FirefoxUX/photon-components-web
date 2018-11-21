@@ -51,7 +51,7 @@
 
 .checkbox__field:checked + .checkbox__label::after {
   background-color: var(--blue-60);
-  background-image: url(./checkbox-check-16.svg);
+  background-image: url(~photon-icons/icons/desktop/check-16.svg?fill=grey-10-a90);
 }
 
 .checkbox__field:checked + .checkbox__label:hover::after {
