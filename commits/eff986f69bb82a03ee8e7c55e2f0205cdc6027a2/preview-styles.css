@@ -1,0 +1,11 @@
+body {
+  margin: 2rem;
+  padding: 0;
+}
+
+.sample {
+  display: grid;
+  grid-gap: 1rem;
+  justify-items: start;
+  max-width: 800px;
+}
