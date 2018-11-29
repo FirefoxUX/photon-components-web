@@ -17,11 +17,11 @@ module.exports = (baseConfig, env, defaultConfig) => {
   */
   const entriesMeta = {
     iframe: {
-      headHtmlSnippet: getPreviewHeadHtml(require.resolve("."), process.env),
+      headHtmlSnippet: getPreviewHeadHtml(__dirname, process.env),
       bodyHtmlSnippet: getPreviewBodyHtml(),
     },
     manager: {
-      headHtmlSnippet: getManagerHeadHtml(require.resolve("."), process.env),
+      headHtmlSnippet: getManagerHeadHtml(__dirname, process.env),
     },
   };
   const entries = defaultConfig.entry;
