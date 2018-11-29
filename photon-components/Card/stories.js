@@ -60,8 +60,6 @@ storiesOf("Card", module)
     Quae mollitia eius perspiciatis error iure. Molestiae quo cumque et suscipit hic provident error. Corporis iure deleniti unde voluptatem commodi ipsam velit similique.
         </p>
       </Card>
-      
     </Sample>
   ))
-  
   ;

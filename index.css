@@ -17,9 +17,11 @@ body {
     sans-serif;
 }
 
-/* Typography */
-
 :root {
+  /* BASELINE GRID */
+  --baseline-grid: 4px;
+
+  /* FONT-SIZES */
   --body-10: 13px;
   --body-20: calc(var(--body-10) * 1.15);
   --body-30: calc(var(--body-20) * 1.15);
@@ -30,6 +32,11 @@ body {
   --title-40: calc(var(--title-30) * 1.29);
 
   --display-20: calc(var(--title-40) * 1.29);
+
+  /* SHADOWS */
+  --shadow-10: 0 1px 4px var(--grey-90-a10);
+  --shadow-20: 0 2px 8px var(--grey-90-a10);
+  --shadow-30: 0 4px 16px var(--grey-90-a10);
 }
 
 html {
@@ -50,10 +57,4 @@ h2 {
 h3 {
   font-size: var(--title-20);
   font-weight: 500;
-}
-
-code.hljs {
-  display: block;
-  font-size: var(--body-20);
-  padding: 1em;
 }
