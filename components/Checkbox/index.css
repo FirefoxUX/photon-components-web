@@ -1,67 +1,53 @@
 .checkbox {
-  position: relative;
-
-  /* TODO: Figure out if inline-block and 100% width the right thing for
-     providing consistent click target */
-  display: inline-block;
-  width: 100%;
-}
-
-.checkbox--disabled {
-  opacity: .4;
-}
-
-.checkbox__field {
-  opacity: 0;
-  padding-right: 4px;
-  width: 16px;
-  height: 16px;
-}
-
-.checkbox__label {
-  -moz-user-select: none;
-}
-
-.checkbox__label::after {
-  position: absolute;
-  cursor: pointer;
-  left: 2px;
-  bottom: 2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-  margin-left: 0;
-  margin-right: 0;
-  content: "";
+  -moz-appearance: none;
+  -webkit-appearance: none;
   background-color: var(--grey-90-a10);
+  border-radius: 2px;
   border: 1px solid var(--grey-90-a30);
+  height: 16px;
+  margin: -2px 4px;
+  width: 16px;
 }
 
-.checkbox__label:hover::after {
+.checkbox:hover {
   background-color: var(--grey-90-a20);
 }
 
-.checkbox__label:active::after {
+.checkbox:active {
   background-color: var(--grey-90-a30);
 }
 
-.checkbox__field:focus + .checkbox__label::after {
+.checkbox:focus {
   border: none;
-  left: 3px;
-  bottom: 3px;
   box-shadow: 0 0 0 1px #0a84ff inset, 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, .3);
 }
 
-.checkbox__field:checked + .checkbox__label::after {
+.checkbox:checked {
   background-color: var(--blue-60);
-  background-image: url(~photon-icons/icons/desktop/check-16.svg?fill=grey-10-a90);
+  background-image: url(./checkbox-check-16.svg?fill=grey-10-a90);
+  background-position: center center;
 }
 
-.checkbox__field:checked + .checkbox__label:hover::after {
+.checkbox:checked:hover {
   background-color: var(--blue-70);
 }
 
-.checkbox__field:checked + .checkbox__label:active::after {
+.checkbox:checked:active {
   background-color: var(--blue-80);
+}
+
+.checkbox:disabled {
+  opacity: .4;
+}
+
+.checkbox:disabled:hover {
+  background-color: var(--grey-90-a10);
+}
+
+.checkbox:disabled:checked:hover {
+  background-color: var(--blue-60);
+}
+
+.checkbox--disabled__label__text {
+  opacity: .4;
 }
