@@ -4,5 +4,5 @@ import "./index.css";
 
 import "./attributes";
 
-// Import all components/*/index.js
-require.context("./components", true, /\/index.js$/);
+// Import all photon-components/*/index.js
+require.context("./photon-components", true, /\/index.js$/);
