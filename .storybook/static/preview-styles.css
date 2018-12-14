@@ -9,7 +9,7 @@ body {
   flex-direction: column;
 }
 
-#root {
+.sample {
   display: grid;
   grid-gap: 2rem;
   justify-items: start;
