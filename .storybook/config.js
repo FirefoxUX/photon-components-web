@@ -3,7 +3,7 @@ import { withOptions } from "@storybook/addon-options";
 
 import "../index.js";
 
-const reqInSrcTree = require.context("../components", true, /\/stories.jsx?$/);
+const reqInSrcTree = require.context("../photon-components", true, /\/stories.jsx?$/);
 
 function loadStories() {
   require("../stories.js");
