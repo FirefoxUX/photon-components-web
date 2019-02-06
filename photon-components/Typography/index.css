@@ -1,0 +1,69 @@
+.typography {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+
+.typography--bold {
+  font-weight: 700 !important;
+}
+
+.typography--type-body {
+  font-weight: 400;
+}
+
+.typography--type-body.typography--size-10 {
+  font-size: 13px;
+}
+
+.typography--type-body.typography--size-20 {
+  font-size: 15px;
+}
+
+.typography--type-body.typography--size-30 {
+  font-size: 17px;
+}
+
+.typography--type-caption {
+  font-weight: 400;
+}
+
+.typography--type-caption.typography--size-10 {
+  font-size: 11px;
+}
+
+.typography--type-caption.typography--size-20 {
+  font-size: 13px;
+}
+
+.typography--type-caption.typography--size-30 {
+  font-size: 15px;
+}
+
+.typography--type-display {
+  font-weight: 200;
+}
+
+.typography--type-display.typography--size-20 {
+  font-size: 36px;
+}
+
+.typography--type-title {
+  font-weight: 500;
+}
+
+.typography--type-title.typography--size-10 {
+  font-size: 13px;
+}
+
+.typography--type-title.typography--size-20 {
+  font-size: 17px;
+}
+
+.typography--type-title.typography--size-30 {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.typography--type-title.typography--size-40 {
+  font-size: 28px;
+  font-weight: 300;
+}
